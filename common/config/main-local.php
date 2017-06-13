@@ -9,9 +9,18 @@ return [
             'charset' => 'utf8',
         ],
         'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            'viewPath' => '@common/mail',
-        ],
+                'class' => 'yii\swiftmailer\Mailer',
+                'viewPath' => '@common/mail',
+                'useFileTransport' => false,
+                'transport' => [
+                 'class' => 'Swift_SmtpTransport',
+                 'host' => 'smtp.gmail.com',
+                 'username' => 'lesanglierdesardennes@gmail.com',
+                 'password' => 'mot2passe',
+                 'port' => '587',
+                 'encryption' => 'tls',
+             ],  
+        ], 
     ],
     'bootstrap' => ['gii'],
     'modules' => [

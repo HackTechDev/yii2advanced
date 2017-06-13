@@ -1,0 +1,527 @@
+2017-06-13 21:54:32 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "site%2registration%2register".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('site%2registrat...', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 21:54:32 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_GET = [
+    'r' => 'site%2registration%2register'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '39456'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2registration%2register'
+    'REQUEST_URI' => '/index.php?r=site%2registration%2register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497383672.287
+    'REQUEST_TIME' => 1497383672
+]
+2017-06-13 21:54:41 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user%2registration%2register".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user%2registrat...', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 21:54:41 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_GET = [
+    'r' => 'user%2registration%2register'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '39458'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2registration%2register'
+    'REQUEST_URI' => '/index.php?r=user%2registration%2register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497383681.489
+    'REQUEST_TIME' => 1497383681
+]
+2017-06-13 21:57:18 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/register".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/register', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 21:57:18 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_GET = [
+    'r' => 'user/register'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '39525'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/register'
+    'REQUEST_URI' => '/index.php?r=user/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497383838.525
+    'REQUEST_TIME' => 1497383838
+]
+2017-06-13 21:58:16 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/register".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/register', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 21:58:16 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_GET = [
+    'r' => 'user/register'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '39527'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/register'
+    'REQUEST_URI' => '/index.php?r=user/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497383896.654
+    'REQUEST_TIME' => 1497383896
+]
+2017-06-13 21:58:20 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 21:58:20 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '39527'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/index.php?r=user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497383900.286
+    'REQUEST_TIME' => 1497383900
+]
+2017-06-13 22:06:54 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 22:06:54 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '39660'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_URI' => '/index.php?r=user'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497384414.048
+    'REQUEST_TIME' => 1497384414
+]
+2017-06-13 22:25:16 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user/register".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/register', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 22:25:16 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_GET = [
+    'r' => 'user/register'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '40016'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user/register'
+    'REQUEST_URI' => '/index.php?r=user/register'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497385516.317
+    'REQUEST_TIME' => 1497385516
+]
+2017-06-13 22:33:33 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "/user/login".' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php:532
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('/user/login', Array)
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-13 22:33:33 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '40089'
+    'REDIRECT_URL' => '/user/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '//user/login'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497386013.802
+    'REQUEST_TIME' => 1497386013
+]
+2017-06-13 22:49:07 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message 'Not found' in /home/util01/YII/yii-application/vendor/dektrium/yii2-user/filters/FrontendFilter.php:39
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/ActionFilter.php(75): dektrium\user\filters\FrontendFilter->beforeAction(Object(yii\base\InlineAction))
+#1 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#2 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Component.php(545): call_user_func(Array, Object(yii\base\ActionEvent))
+#3 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php(676): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#4 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Controller.php(144): yii\base\Module->beforeAction(Object(yii\base\InlineAction))
+#5 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php(523): yii\base\Controller->runAction('index', Array)
+#6 /home/util01/YII/yii-application/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('user/admin/inde...', Array)
+#7 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /home/util01/YII/yii-application/frontend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2017-06-13 22:49:07 [127.0.0.1][-][0hqobv281i982m8mk0altc6lb4][info][application] $_COOKIE = [
+    'advanced-frontend' => '0hqobv281i982m8mk0altc6lb4'
+    '_csrf-frontend' => 'bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\">K³-ß%$\'ÉA¡‚?t™Ÿ\'¬MØÿ®\'3—pÐ\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'frontend.dev'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:50.0) Gecko/20100101 Firefox/50.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'advanced-frontend=0hqobv281i982m8mk0altc6lb4; _csrf-frontend=bb5e7c53eda807da016a44288a353b944cbf0f271e9d911fe1b7d8f9ac4f2898a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22%3EK%B3%15-%DF%25%24%27%C9%1AA%A1%82%3Ft%99%05%9F%27%ACM%D8%FF%AE%06%273%97%8Dp%D0%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at frontend.dev Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'frontend.dev'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/util01/YII/yii-application/frontend/web/'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/util01/YII/yii-application/frontend/web/index.php'
+    'REMOTE_PORT' => '40199'
+    'REDIRECT_URL' => '/user/admin/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/user/admin/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1497386947.052
+    'REQUEST_TIME' => 1497386947
+]

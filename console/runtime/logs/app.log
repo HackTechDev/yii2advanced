@@ -1,0 +1,288 @@
+2017-06-13 19:50:50 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Command.php:842
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Command.php(842): PDOStatement->execute()
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Migration.php(288): yii\db\Command->execute()
+#2 /home/util01/YII/yii-application/vendor/dektrium/yii2-user/migrations/m140209_132017_init.php(39): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(671): m140209_132017_init->up()
+#4 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->migrateUp('m140209_132017_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('up', Array)
+#9 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('up', Array)
+#10 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#11 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#12 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /home/util01/YII/yii-application/yii(27): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(25) NOT NULL,
+	`email` varchar(255) NOT NULL,
+	`password_hash` varchar(60) NOT NULL,
+	`auth_key` varchar(32) NOT NULL,
+	`confirmation_token` varchar(32) NULL DEFAULT NULL,
+	`confirmation_sent_at` int(11) NULL DEFAULT NULL,
+	`confirmed_at` int(11) NULL DEFAULT NULL,
+	`unconfirmed_email` varchar(255) NULL DEFAULT NULL,
+	`recovery_token` varchar(32) NULL DEFAULT NULL,
+	`recovery_sent_at` int(11) NULL DEFAULT NULL,
+	`blocked_at` int(11) NULL DEFAULT NULL,
+	`registered_from` int(11) NULL DEFAULT NULL,
+	`logged_in_from` int(11) NULL DEFAULT NULL,
+	`logged_in_at` int(11) NULL DEFAULT NULL,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Migration.php(288): yii\db\Command->execute()
+#2 /home/util01/YII/yii-application/vendor/dektrium/yii2-user/migrations/m140209_132017_init.php(39): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(671): m140209_132017_init->up()
+#4 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->migrateUp('m140209_132017_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('up', Array)
+#9 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('up', Array)
+#10 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#11 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#12 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /home/util01/YII/yii-application/yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2017-06-13 19:50:48 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c2'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/util01'
+    'SELINUX_INIT' => 'YES'
+    'COMP_WORDBREAKS' => ' 	
+\"\'><;|&(:'
+    'SESSION' => 'gnome-fallback-compiz'
+    'GPG_AGENT_INFO' => '/run/user/1000/keyring-qaeI3g/gpg:0:1'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '3409'
+    'XDG_MENU_PREFIX' => 'gnome-flashback-'
+    'DERBY_HOME' => '/usr/lib/jvm/java-8-oracle/db'
+    'WINDOWID' => '73400331'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/2951'
+    'GNOME_KEYRING_CONTROL' => '/run/user/1000/keyring-qaeI3g'
+    'GTK_MODULES' => 'overlay-scrollbar:unity-gtk-module'
+    'USER' => 'util01'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring-qaeI3g/ssh'
+    'SESSION_MANAGER' => 'local/station:@/tmp/.ICE-unix/3146,unix/station:/tmp/.ICE-unix/3146'
+    'DEFAULTS_PATH' => '/usr/share/gconf/gnome-fallback-compiz.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-gnome-fallback-compiz:/usr/share/upstart/xdg:/etc/xdg'
+    'PATH' => '/home/util01/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/util01/JEUX/SECONDEVIE/PHOENIX/autobuild/bin'
+    'DESKTOP_SESSION' => 'gnome-fallback-compiz'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'PWD' => '/home/util01/YII/yii-application'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'JAVA_HOME' => '/usr/lib/jvm/java-8-oracle'
+    'GNOME_KEYRING_PID' => '2949'
+    'LANG' => 'fr_FR.UTF-8'
+    'GDM_LANG' => 'fr_FR'
+    'MANDATORY_PATH' => '/usr/share/gconf/gnome-fallback-compiz.mandatory.path'
+    'UBUNTU_MENUPROXY' => '0'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'gnome-fallback-compiz'
+    'SESSIONTYPE' => 'gnome-session'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/util01'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'fr_FR'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LOGNAME' => 'util01'
+    'XDG_DATA_DIRS' => '/usr/share/gnome-fallback-compiz:/usr/share/gnome:/usr/local/share/:/usr/share/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Hv2zioAfRr'
+    'J2SDKDIR' => '/usr/lib/jvm/java-8-oracle'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'INSTANCE' => ''
+    'TEXTDOMAIN' => 'im-config'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0.0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'J2REDIR' => '/usr/lib/jvm/java-8-oracle/jre'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'HISTTIMEFORMAT' => '%F %T : '
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/util01/.Xauthority'
+    'OLDPWD' => '/home/util01/YII'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497383448.2402
+    'REQUEST_TIME' => 1497383448
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/dektrium/yii2-user/migrations'
+    ]
+    'argc' => 3
+]
+2017-06-13 19:51:00 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Command.php:842
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Command.php(842): PDOStatement->execute()
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Migration.php(288): yii\db\Command->execute()
+#2 /home/util01/YII/yii-application/vendor/dektrium/yii2-user/migrations/m140209_132017_init.php(39): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(671): m140209_132017_init->up()
+#4 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->migrateUp('m140209_132017_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('up', Array)
+#9 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('up', Array)
+#10 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#11 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#12 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /home/util01/YII/yii-application/yii(27): yii\base\Application->run()
+#14 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'user' already exists
+The SQL being executed was: CREATE TABLE `user` (
+	`id` int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`username` varchar(25) NOT NULL,
+	`email` varchar(255) NOT NULL,
+	`password_hash` varchar(60) NOT NULL,
+	`auth_key` varchar(32) NOT NULL,
+	`confirmation_token` varchar(32) NULL DEFAULT NULL,
+	`confirmation_sent_at` int(11) NULL DEFAULT NULL,
+	`confirmed_at` int(11) NULL DEFAULT NULL,
+	`unconfirmed_email` varchar(255) NULL DEFAULT NULL,
+	`recovery_token` varchar(32) NULL DEFAULT NULL,
+	`recovery_sent_at` int(11) NULL DEFAULT NULL,
+	`blocked_at` int(11) NULL DEFAULT NULL,
+	`registered_from` int(11) NULL DEFAULT NULL,
+	`logged_in_from` int(11) NULL DEFAULT NULL,
+	`logged_in_at` int(11) NULL DEFAULT NULL,
+	`created_at` int(11) NOT NULL,
+	`updated_at` int(11) NOT NULL
+) CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB' in /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Schema.php:636
+Stack trace:
+#0 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Command.php(852): yii\db\Schema->convertException(Object(PDOException), 'CREATE TABLE `u...')
+#1 /home/util01/YII/yii-application/vendor/yiisoft/yii2/db/Migration.php(288): yii\db\Command->execute()
+#2 /home/util01/YII/yii-application/vendor/dektrium/yii2-user/migrations/m140209_132017_init.php(39): yii\db\Migration->createTable('{{%user}}', Array, 'CHARACTER SET u...')
+#3 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(671): m140209_132017_init->up()
+#4 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->migrateUp('m140209_132017_...')
+#5 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#6 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#7 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#8 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Controller.php(128): yii\base\Controller->runAction('up', Array)
+#9 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Module.php(523): yii\console\Controller->runAction('up', Array)
+#10 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#11 /home/util01/YII/yii-application/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#12 /home/util01/YII/yii-application/vendor/yiisoft/yii2/base/Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#13 /home/util01/YII/yii-application/yii(27): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S01
+    [1] => 1050
+    [2] => Table 'user' already exists
+)
+
+2017-06-13 19:50:58 [-][-][-][info][application] $_SERVER = [
+    'XDG_VTNR' => '7'
+    'XDG_SESSION_ID' => 'c2'
+    'CLUTTER_IM_MODULE' => 'xim'
+    'XDG_GREETER_DATA_DIR' => '/var/lib/lightdm-data/util01'
+    'SELINUX_INIT' => 'YES'
+    'COMP_WORDBREAKS' => ' 	
+\"\'><;|&(:'
+    'SESSION' => 'gnome-fallback-compiz'
+    'GPG_AGENT_INFO' => '/run/user/1000/keyring-qaeI3g/gpg:0:1'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'VTE_VERSION' => '3409'
+    'XDG_MENU_PREFIX' => 'gnome-flashback-'
+    'DERBY_HOME' => '/usr/lib/jvm/java-8-oracle/db'
+    'WINDOWID' => '73400331'
+    'UPSTART_SESSION' => 'unix:abstract=/com/ubuntu/upstart-session/1000/2951'
+    'GNOME_KEYRING_CONTROL' => '/run/user/1000/keyring-qaeI3g'
+    'GTK_MODULES' => 'overlay-scrollbar:unity-gtk-module'
+    'USER' => 'util01'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:'
+    'XDG_SESSION_PATH' => '/org/freedesktop/DisplayManager/Session0'
+    'XDG_SEAT_PATH' => '/org/freedesktop/DisplayManager/Seat0'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring-qaeI3g/ssh'
+    'SESSION_MANAGER' => 'local/station:@/tmp/.ICE-unix/3146,unix/station:/tmp/.ICE-unix/3146'
+    'DEFAULTS_PATH' => '/usr/share/gconf/gnome-fallback-compiz.default.path'
+    'XDG_CONFIG_DIRS' => '/etc/xdg/xdg-gnome-fallback-compiz:/usr/share/upstart/xdg:/etc/xdg'
+    'PATH' => '/home/util01/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/home/util01/JEUX/SECONDEVIE/PHOENIX/autobuild/bin'
+    'DESKTOP_SESSION' => 'gnome-fallback-compiz'
+    'QT_IM_MODULE' => 'ibus'
+    'QT_QPA_PLATFORMTHEME' => 'appmenu-qt5'
+    'PWD' => '/home/util01/YII/yii-application'
+    'JOB' => 'dbus'
+    'XMODIFIERS' => '@im=ibus'
+    'JAVA_HOME' => '/usr/lib/jvm/java-8-oracle'
+    'GNOME_KEYRING_PID' => '2949'
+    'LANG' => 'fr_FR.UTF-8'
+    'GDM_LANG' => 'fr_FR'
+    'MANDATORY_PATH' => '/usr/share/gconf/gnome-fallback-compiz.mandatory.path'
+    'UBUNTU_MENUPROXY' => '0'
+    'IM_CONFIG_PHASE' => '1'
+    'GDMSESSION' => 'gnome-fallback-compiz'
+    'SESSIONTYPE' => 'gnome-session'
+    'XDG_SEAT' => 'seat0'
+    'HOME' => '/home/util01'
+    'SHLVL' => '1'
+    'LANGUAGE' => 'fr_FR'
+    'GNOME_DESKTOP_SESSION_ID' => 'this-is-deprecated'
+    'LOGNAME' => 'util01'
+    'XDG_DATA_DIRS' => '/usr/share/gnome-fallback-compiz:/usr/share/gnome:/usr/local/share/:/usr/share/'
+    'QT4_IM_MODULE' => 'xim'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:abstract=/tmp/dbus-Hv2zioAfRr'
+    'J2SDKDIR' => '/usr/lib/jvm/java-8-oracle'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'INSTANCE' => ''
+    'TEXTDOMAIN' => 'im-config'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'DISPLAY' => ':0.0'
+    'XDG_CURRENT_DESKTOP' => 'Unity'
+    'GTK_IM_MODULE' => 'ibus'
+    'J2REDIR' => '/usr/lib/jvm/java-8-oracle/jre'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    'HISTTIMEFORMAT' => '%F %T : '
+    'TEXTDOMAINDIR' => '/usr/share/locale/'
+    'COLORTERM' => 'gnome-terminal'
+    'XAUTHORITY' => '/home/util01/.Xauthority'
+    'OLDPWD' => '/home/util01/YII'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497383458.9504
+    'REQUEST_TIME' => 1497383458
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@vendor/dektrium/yii2-user/migrations'
+    ]
+    'argc' => 3
+]
