@@ -13,4 +13,8 @@ return [
             'viewPath' => '@common/mail',
         ],
     ],
+    'bootstrap' => ['gii'],
+    'modules' => [
+        'gii' => 'yii\gii\Module',
+    ],  
 ];
