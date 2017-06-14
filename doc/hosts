@@ -13,8 +13,8 @@
 #192.168.1.23    blog.framboisepi.localhost
 #192.168.1.23    blog.localhost
 
-127.0.0.1   frontend.dev
-127.0.0.1   backend.dev
+127.0.0.1   gitgame.net
+127.0.0.1   admin.gitgame.net
 
 
 # The following lines are desirable for IPv6 capable hosts
